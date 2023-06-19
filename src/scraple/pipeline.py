@@ -5,6 +5,7 @@ The library utilize mostly beautifulsoup.select() method to retrieve elements wh
 function in this module take a list of element object. You shall abide to this rule if you want to
 pass custom pipeline processor when defining Rules.
 """
+
 from typing import Union, TypeAlias
 List_of_Elements: TypeAlias = list
 
@@ -19,6 +20,7 @@ def tags(elements: List_of_Elements, return_str=False) -> Union[str, list]:
     if len(elements) > 0:
         tag = [element.text.strip() for element in elements]
         tag = ", ".join(tag) if return_str else tag
+
     return tag
 
 

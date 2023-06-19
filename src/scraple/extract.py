@@ -204,6 +204,7 @@ class SimpleExtractor:
         parents = parent_elements(body, self.parent)
         if len(parents) < 1:
             raise ExtractError()
+        
         for item in parents:
             if iterate_parent_element_instead:
                 yield item

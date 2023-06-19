@@ -3,6 +3,10 @@
 Scraple is a Python library designed to simplify the process of web scraping, 
 providing easy scraping and easy searching for selectors.
 
+## Version 
+v0.1.1 [changelog](https://github.com/max-efort/scraple/releases)
+
+
 ## Installation
 The package is hosted in [Pypi](https://pypi.org/project/scraple/) and can be 
 installed using pip:

@@ -27,7 +27,7 @@ class SearchError(Exception):
 
 class ExtractError(Exception):
     def __init__(self):
-        msg = "There is no element match that match the selector provided from the rule, " \
+        msg = "There is no element that match the selector provided from the rule, " \
               "either the DOM change by sophisticated anti-scrap method or you provide an " \
               "incompatible web page with the rule."
         super().__init__(msg)

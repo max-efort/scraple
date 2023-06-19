@@ -4,7 +4,7 @@ scraple - Simple Scraping Library
 =============================
 
 Scraple is a Python library designed to simplify the process of web scraping.
-This library provide easy scraping and easy searching for selectors.
+This library provide easy searching for selectors and easy scraping.
 
 Overview
 ---------

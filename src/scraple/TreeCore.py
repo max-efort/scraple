@@ -1,5 +1,5 @@
 """
-Contain the core function to customize a different interpretation of tree structure
+Contain the core function of implementation for "custom tree structure"
 used in this package.
 """
 

@@ -9,13 +9,12 @@ This library provide easy scraping and easy searching for selectors.
 Overview
 ---------
 
-Simprap provides a simple way to extract data from web pages by defining simple rules
+Scraple provides a simple way to extract data from web pages by defining simple rules
 for extraction. It also offers a convenient mechanism for automatically finding
 selectors using only string present in the page.
 
 Main Features
 ---------
-
 - **SimpleExtractor**: A class that enables rule-based extraction of data from web pages,
   making the actual scraping easy.
 
@@ -24,8 +23,7 @@ Main Features
 
 Exception
 --------------
-
-Simprap includes the following error classes:
+Scraple includes the following error classes:
 
 - **ParsingError**: Raised when an unexpected error occurs during page parsing.
 - **SearchError**: Raised when an unexpected error occurs while searching

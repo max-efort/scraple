@@ -1,5 +1,5 @@
 """
-Contain the core function to search the tree of the DOM.
+Contain the core function to traverse the "custom tree structure".
 """
 from bs4 import BeautifulSoup as Bs
 

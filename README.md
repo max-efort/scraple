@@ -15,7 +15,7 @@ pip install scraple
 The package provides two main classes: Rules and SimpleExtractor.
 
 #### 1. Rules
-The Rules class allows you to define rules of extraction from a web page reference. 
+The Rules class allows you to define rules of extraction. 
 You can pick selector just by knowing what string present in that page using the `add_field_rule` method. 
 This method automatically searches for selector of element which text content match the string. 
 Additionally, the `add_field_rule` method supports regular expression matching.
@@ -23,6 +23,7 @@ Additionally, the `add_field_rule` method supports regular expression matching.
 ```python
 from scraple import Rules
 
+#To instantiate Rules object you need to have the reference page.
 some_rules = Rules("reference in the form of string path to local html file", "local")
 some_rules.add_field_rule("a sentence or word exist in reference page", "field name 1")
 some_rules.add_field_rule("some othe.*?text", "field name 2", re_flag=True)
@@ -36,7 +37,7 @@ some_rules.add_field_rule("some othe.*?text", "field name 2", re_flag=True)
 #### 2. SimpleExtractor
 The SimpleExtractor class performs the actual scraping based on a defined rule.
 A Rules object act as the "which to extract" and the SimpleExtractor do the "extract" or 
-scraping. First pass a Rules object
+scraping. First, pass a Rules object
 to SimpleExtractor constructor and use the 
 `perform_extraction` method to create a generator object that iterate dictionary of
 elements extracted.

@@ -19,7 +19,7 @@ pip install scraple
 ```
 
 ## 3. Tutorial
-For this tutorial, file example of web page used is "Modified Quotes to Scrape.html" 
+For this tutorial, file example of web page used is "Modified quotes to scrape.html" 
 provided in the code_example directory. It is a modified version from 
 pages of [quotes.toscrape.com](https://quotes.toscrape.com).
 
@@ -40,7 +40,7 @@ from scraple import Rules, SimpleExtractor
 from pandas import concat, DataFrame as Df
 
 # suppose we want to scrap just the Quote
-quote_rule = Rules(r"Modified Quotes to Scrape.html", "local")
+quote_rule = Rules(r"Modified quotes to scrape.html", "local")
 quote_rule.add_field_rule(
     "It is our choices, Harry, that show what we truly are, far more than our abilities.",
     "Quotes",
@@ -57,7 +57,7 @@ result_panda = Df()
 
 # scrape using SimpleExtractor, for now we just gonna scrape the reference page
 extract = SimpleExtractor(quote_rule)
-extracting = extract.perform_extraction(r"Modified Quotes to Scrape.html", "local")
+extracting = extract.perform_extraction(r"Modified quotes to scrape.html", "local")
 
 for index, dictionary in enumerate(extracting, 1):  # iterate dictionary of scraping result
     result_panda = concat([result_panda, Df(dictionary, index=[index])])
@@ -91,7 +91,7 @@ from scraple import Rules, SimpleExtractor
 # to displaying the end result in tabular manner we use panda
 from pandas import concat, DataFrame as Df
 
-rules = Rules(r"Modified Quotes to Scrape.html", "local")
+rules = Rules(r"Modified quotes to scrape.html", "local")
 # To make defining rule more easier we iterate list of defined field name, string identifier and
 # additionally finding the string of n-th and we will provide pipeline to process the extracted
 # element internally.
@@ -143,7 +143,7 @@ extract = SimpleExtractor(rules)
 
 # For this tutorial, we will just use the reference page as the source
 # In the previous example we use:
-# extracting = extract.perform_extraction(r"Modified Quotes to Scrape.html", "local")
+# extracting = extract.perform_extraction(r"Modified quotes to scrape.html", "local")
 # Rules class provide a methode that retrieve beautifulsoup object of the reference, so we can also use:
 extracting = extract.perform_extraction(rules.get_reference_soup(), "parsed")
 
@@ -263,7 +263,7 @@ all the text.
 Use this method to retrieve the selector of the parent element if you define multiple rule,
 or if you just define one rule it will retrieve that single selector.
 ```python
-navigation_rules = Rules(r"Modified Quotes to Scrape.html", "local")
+navigation_rules = Rules(r"Modified quotes to scrape.html", "local")
 navigation_rules.add_field_rule(
     string="Next",
     field_name="Navigation",

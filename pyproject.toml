@@ -27,3 +27,4 @@ dependencies =[
 
 [project.urls]
 repository = "https://github.com/max-efort/scraple"
+changelog = "https://github.com/max-efort/scraple/releases"

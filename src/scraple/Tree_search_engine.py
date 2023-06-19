@@ -1,6 +1,4 @@
-"""
-Contain the core function to traverse the "custom tree structure".
-"""
+"""Contain the core function to traverse the "custom tree structure"."""
 from bs4 import BeautifulSoup as Bs
 
 from typing import Sequence
